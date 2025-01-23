@@ -1,7 +1,9 @@
+#include "Channel.h"
+#include "Bases.h"
 #include <stdio.h>
 #include <iostream>
 #include <vector>
-#include <cstdlib>
+#include <bits/stdc++.h>
 
 #ifndef USER_H
 #define USER_H
@@ -13,13 +15,13 @@ class User{
     public:
         User(string name);
         string name;
-        vector<char> base;
+        vector<Bases> bases;
         vector<int> key;
         vector<int> sifted_key;
 
     protected:
-        void pick_bases(int bit_length);
-        void sift_key(vector<char> base_1, vector<char> base_2);
+        void pick_base(int bit_length);
+        void sift_key(vector<Bases> base_1, vector<Bases> base_2);
 };
 
 #endif
