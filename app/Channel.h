@@ -10,11 +10,10 @@ class Channel{
 
     public:
         Channel();
-        deque<char> buffer;
-    
-    protected:
-        void push(char bit);
+        deque<int> buffer;
+        void push(int bit);
         void pop();
+        
 };
 
 #endif

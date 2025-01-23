@@ -2,7 +2,7 @@
 
 Channel::Channel(){}
 
-void Channel::push(char bit){
+void Channel::push(int bit){
     this->buffer.push_back(bit);
 }
 
