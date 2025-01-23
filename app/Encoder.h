@@ -1,5 +1,4 @@
 #include "User.h"
-#include <vector>
 
 #ifndef ENCODER_H
 #define ENCODER_H
@@ -13,8 +12,9 @@ class Encoder : public User{
 
     private:
         int bit_length;
-        vector<int> encoded_message;     
-
+        vector<int> encoded_message;
+        void encode_message(); 
+        void push_message(Channel& channel);    
 };
 
 #endif
