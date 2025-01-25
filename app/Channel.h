@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <iostream>
 #include <deque>
 
 #ifndef CHANNEL_H
@@ -13,6 +14,7 @@ class Channel{
         deque<int> buffer;
         void push(int bit);
         void pop();
+        void print_channel();
         
 };
 

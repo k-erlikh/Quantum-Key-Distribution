@@ -9,3 +9,10 @@ void Channel::push(int bit){
 void Channel::pop(){
     this->buffer.pop_front();
 }
+
+void Channel::print_channel(){
+    for(int i:this->buffer){
+        std::cout<<i<<" ";
+    }
+    std::cout<<endl;
+}
