@@ -1,9 +1,9 @@
 #include "User.h"
 
-User::User(string name):name(name){}
+User::User(){}
 
 void User::pick_base(int bit_length){
-    srand(time(0));
+    srand(time(0)+1);
     for(int i = 0; i < bit_length; i++){
         bases.push_back(static_cast<Bases>(rand() % 2));
     }
@@ -11,4 +11,19 @@ void User::pick_base(int bit_length){
 
 void User::sift_key(vector<Bases> base_1, vector<Bases> base_2){
     
+}
+
+void User::print_key(){
+    for(int bit:this->key){
+        cout<< bit << " ";
+    }
+    cout<<endl;
+}
+
+void User::print_bases(){
+    cout<< "Bases: ";
+    for(Bases base: this->bases){
+        cout<< base <<" ";
+    }
+    cout<< endl;
 }
