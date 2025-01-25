@@ -14,12 +14,7 @@ void Encoder::encode_message(){
         {BASE_ONE, {45, 135}}
     };
     for(int i = 0; i < bit_length; i++){
-        if (key.at(i) == 0){
-            encoded_message.push_back(bases_map.at(bases.at(i)).at(0));
-        }
-        if (key.at(i) == 1){
-            encoded_message.push_back(bases_map.at(bases.at(i)).at(1));
-        }
+        encoded_message.push_back(bases_map.at(bases.at(i)).at(key.at(i)));
     }
 }
 
