@@ -6,8 +6,10 @@ void Channel::push(int bit){
     this->buffer.push_back(bit);
 }
 
-void Channel::pop(){
+int Channel::pop(){
+    int photon = this->buffer.front();
     this->buffer.pop_front();
+    return photon;
 }
 
 void Channel::print_channel(){
@@ -15,4 +17,8 @@ void Channel::print_channel(){
         std::cout<<i<<" ";
     }
     std::cout<<endl;
+}
+
+bool Channel::is_empty(){
+    return this->buffer.empty();
 }

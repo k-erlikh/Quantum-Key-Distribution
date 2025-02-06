@@ -13,7 +13,8 @@ class Channel{
         Channel();
         deque<int> buffer;
         void push(int bit);
-        void pop();
+        int pop();
+        bool is_empty();
         void print_channel();
         
 };
