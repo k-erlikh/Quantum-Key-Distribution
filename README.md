@@ -27,3 +27,17 @@ There are two possible scenarios for the decoder:
 
 If the decoder has the same bases as the encoder, they will receive the full key.
 If the decoder has a random set of bases, they will occasionally receive the full key. 
+
+## Compile/Run instructions:
+
+```
+make all
+```
+
+Builds the program
+
+```
+./main
+```
+
+Runs through the test in main.cc
