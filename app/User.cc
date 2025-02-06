@@ -13,6 +13,14 @@ void User::sift_key(vector<Bases> base_1, vector<Bases> base_2){
     
 }
 
+vector<Bases> User::send_bases(){
+    return bases;
+}
+
+void User::recevie_bases(vector<Bases> bases){
+    this->bases = bases;
+}
+
 void User::print_key(){
     for(int bit:this->key){
         cout<< bit << " ";
