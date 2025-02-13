@@ -2,8 +2,8 @@
 
 User::User(){}
 
-void User::pick_base(int bit_length){
-    srand(time(0)+1);
+void User::pick_base(int bit_length, int f){
+    srand(time(0)+f);
     for(int i = 0; i < bit_length; i++){
         bases.push_back(static_cast<Bases>(rand() % 2));
     }

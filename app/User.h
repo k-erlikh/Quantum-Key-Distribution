@@ -16,7 +16,7 @@ class User{
         User();
         void print_key();
         void print_bases();
-        void pick_base(int bit_length);
+        void pick_base(int bit_length, int f = 0);
         void sift_key(vector<Bases> base_1, vector<Bases> base_2);
         vector<Bases> send_bases();
         void recevie_bases(vector<Bases> bases);
