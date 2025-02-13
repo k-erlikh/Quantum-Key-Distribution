@@ -10,7 +10,7 @@ class Intercept: public User{
 
     private: 
         int bit_length;
-    
+        std::vector<int> intercept_message;
 };
 
 #endif
