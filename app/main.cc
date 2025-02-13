@@ -8,5 +8,9 @@ int main(){
     
     Test::print_regular_test();
 
+    cout<<endl;
+
+    Test::print_intercept_resend();
+
     return 0;
 }
