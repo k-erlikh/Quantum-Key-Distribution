@@ -1,6 +1,6 @@
-FLAGS = -Wall -Wextra
+FLAGS = -Wall -Wextra -g
 OUTPUT = main
-SRC = main.cc Encoder.cc Decoder.cc Channel.cc User.cc
+SRC = main.cc Encoder.cc Decoder.cc Intercept.cc Channel.cc User.cc Test.cc
 OBJS = $(SRC:.cc=.o)
 
 all: $(OUTPUT)
